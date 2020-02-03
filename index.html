@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Giant PengSoo</title>
+
+</head>
+<style>
+    .text-img {
+        width: 100%;
+    }
+   input {
+    width: 400px;
+   }
+   div {
+       display: flex;
+   }
+   span {
+       padding-top: 100px;
+   }
+   .hide {
+       display: none;
+   }
+</style>
+<body>
+<h2>클릭하면 이미지 URL이 복사됩니다.</h2>
+<input type="text" oninput="searchChange(this)" style="margin: 20px; height: 30px; font-size: 30px;"/>
+<div onclick='onClick(this)'><img src='!!!.gif'><span>!!!<br><input type='text' value='http://peng-soo.github.io/!!!.gif'></span></div>
+<div onclick='onClick(this)'><img src='1to10.jpg'><span>그럼하나부터열끝까지내가다합니까<br><input type='text' value='http://peng-soo.github.io/1to10.jpg'></span></div>
+<div onclick='onClick(this)'><img src='3sec.jpg'><span>작심3초<br><input type='text' value='http://peng-soo.github.io/3sec.jpg'></span></div>
+<div onclick='onClick(this)'><img src='able.gif'><span>되는데요?<br><input type='text' value='http://peng-soo.github.io/able.gif'></span></div>
+<div onclick='onClick(this)'><img src='absurd.jpg'><span>황당<br><input type='text' value='http://peng-soo.github.io/absurd.jpg'></span></div>
+<div onclick='onClick(this)'><img src='adult.jpg'><span>이런걸왜무서워합니까어른이<br><input type='text' value='http://peng-soo.github.io/adult.jpg'></span></div>
+<div onclick='onClick(this)'><img src='amazing.jpg'><span>신기<br><input type='text' value='http://peng-soo.github.io/amazing.jpg'></span></div>
+<div onclick='onClick(this)'><img src='applause.gif'><span>박수<br><input type='text' value='http://peng-soo.github.io/applause.gif'></span></div>
+<div onclick='onClick(this)'><img src='applause.jpg'><span>박수한번주세요<br><input type='text' value='http://peng-soo.github.io/applause.jpg'></span></div>
+<div onclick='onClick(this)'><img src='ask.jpg'><span>질문하세요<br><input type='text' value='http://peng-soo.github.io/ask.jpg'></span></div>
+<div onclick='onClick(this)'><img src='attention.jpg'><span>잠깐<br><input type='text' value='http://peng-soo.github.io/attention.jpg'></span></div>
+<div onclick='onClick(this)'><img src='aware_of_the_mood.jpg'><span>눈치챙겨<br><input type='text' value='http://peng-soo.github.io/aware_of_the_mood.jpg'></span></div>
+<div onclick='onClick(this)'><img src='aware_of_the_mood2.jpg'><span>눈치챙겨눈치챙겨<br><input type='text' value='http://peng-soo.github.io/aware_of_the_mood2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='because_of_me.jpg'><span>다제덕입니다<br><input type='text' value='http://peng-soo.github.io/because_of_me.jpg'></span></div>
+<div onclick='onClick(this)'><img src='because_of_me2.jpg'><span>여러분과내덕입니다<br><input type='text' value='http://peng-soo.github.io/because_of_me2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='become_serious.jpg'><span>정색<br><input type='text' value='http://peng-soo.github.io/become_serious.jpg'></span></div>
+<div onclick='onClick(this)'><img src='become_serious2.jpg'><span>정색<br><input type='text' value='http://peng-soo.github.io/become_serious2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='better_than_expect.jpg'><span>생각보다잘하는데?<br><input type='text' value='http://peng-soo.github.io/better_than_expect.jpg'></span></div>
+<div onclick='onClick(this)'><img src='be_careful.jpg'><span>조심해야돼<br><input type='text' value='http://peng-soo.github.io/be_careful.jpg'></span></div>
+<div onclick='onClick(this)'><img src='be_positive.jpg'><span>긍정적인사람들과얘기해라<br><input type='text' value='http://peng-soo.github.io/be_positive.jpg'></span></div>
+<div onclick='onClick(this)'><img src='be_thankful.jpg'><span>그게어딥니까지금<br><input type='text' value='http://peng-soo.github.io/be_thankful.jpg'></span></div>
+<div onclick='onClick(this)'><img src='block_conversation.jpg'><span>대화차단<br><input type='text' value='http://peng-soo.github.io/block_conversation.jpg'></span></div>
+<div onclick='onClick(this)'><img src='boring.jpg'><span>상당히지루함<br><input type='text' value='http://peng-soo.github.io/boring.jpg'></span></div>
+<div onclick='onClick(this)'><img src='broken_mental.jpg'><span>멘탈아작<br><input type='text' value='http://peng-soo.github.io/broken_mental.jpg'></span></div>
+<div onclick='onClick(this)'><img src='bye.jpg'><span>펭빠<br><input type='text' value='http://peng-soo.github.io/bye.jpg'></span></div>
+<div onclick='onClick(this)'><img src='cannot_wait.jpg'><span>상당히기대된다<br><input type='text' value='http://peng-soo.github.io/cannot_wait.jpg'></span></div>
+<div onclick='onClick(this)'><img src='chicken.jpg'><span>누가치킨소리를내었어<br><input type='text' value='http://peng-soo.github.io/chicken.jpg'></span></div>
+<div onclick='onClick(this)'><img src='comeon.jpg'><span>드루와<br><input type='text' value='http://peng-soo.github.io/comeon.jpg'></span></div>
+<div onclick='onClick(this)'><img src='confused.jpg'><span>어리둥절<br><input type='text' value='http://peng-soo.github.io/confused.jpg'></span></div>
+<div onclick='onClick(this)'><img src='congratulate_me.jpg'><span>날축하해줘<br><input type='text' value='http://peng-soo.github.io/congratulate_me.jpg'></span></div>
+<div onclick='onClick(this)'><img src='conscienceless.jpg'><span>양심어디<br><input type='text' value='http://peng-soo.github.io/conscienceless.jpg'></span></div>
+<div onclick='onClick(this)'><img src='convincing.jpg'><span>아주설득력있으시네요<br><input type='text' value='http://peng-soo.github.io/convincing.jpg'></span></div>
+<div onclick='onClick(this)'><img src='crazy.jpg'><span>실성<br><input type='text' value='http://peng-soo.github.io/crazy.jpg'></span></div>
+<div onclick='onClick(this)'><img src='crazy2.jpg'><span>실성했습니까?<br><input type='text' value='http://peng-soo.github.io/crazy2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='cry.gif'><span>맴찢<br><input type='text' value='http://peng-soo.github.io/cry.gif'></span></div>
+<div onclick='onClick(this)'><img src='cry.jpg'><span>눈물이다나요<br><input type='text' value='http://peng-soo.github.io/cry.jpg'></span></div>
+<div onclick='onClick(this)'><img src='damaged.jpg'><span>어질<br><input type='text' value='http://peng-soo.github.io/damaged.jpg'></span></div>
+<div onclick='onClick(this)'><img src='defamation.jpg'><span>어우명예아파<br><input type='text' value='http://peng-soo.github.io/defamation.jpg'></span></div>
+<div onclick='onClick(this)'><img src='deny_reality.jpg'><span>다들저를놀리려고하는군요<br><input type='text' value='http://peng-soo.github.io/deny_reality.jpg'></span></div>
+<div onclick='onClick(this)'><img src='did_not_know.jpg'><span>와그런소리처음들음<br><input type='text' value='http://peng-soo.github.io/did_not_know.jpg'></span></div>
+<div onclick='onClick(this)'><img src='did_well.jpg'><span>칭찬더줘잘한거맞습니까<br><input type='text' value='http://peng-soo.github.io/did_well.jpg'></span></div>
+<div onclick='onClick(this)'><img src='diet.jpg'><span>다이어트<br><input type='text' value='http://peng-soo.github.io/diet.jpg'></span></div>
+<div onclick='onClick(this)'><img src='diet2.jpg'><span>갑작스런다이어트는실패하기쉽습니다<br><input type='text' value='http://peng-soo.github.io/diet2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='dirty.jpg'><span>내가더러워?<br><input type='text' value='http://peng-soo.github.io/dirty.jpg'></span></div>
+<div onclick='onClick(this)'><img src='doing_well.jpg'><span>잘하죠?<br><input type='text' value='http://peng-soo.github.io/doing_well.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_hard.jpg'><span>정성을들여서하세요정성을<br><input type='text' value='http://peng-soo.github.io/do_hard.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_not_know.jpg'><span>몰라<br><input type='text' value='http://peng-soo.github.io/do_not_know.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_not_nag.jpg'><span>제발잔소리좀하지말아주십시오<br><input type='text' value='http://peng-soo.github.io/do_not_nag.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_not_nag2.jpg'><span>잔소리는거절한다<br><input type='text' value='http://peng-soo.github.io/do_not_nag2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_roughly.jpg'><span>거대충넘어갑시다<br><input type='text' value='http://peng-soo.github.io/do_roughly.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_roughly2.jpg'><span>답그냥대충정하면됨<br><input type='text' value='http://peng-soo.github.io/do_roughly2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_tomorrow.jpg'><span>기진맥진나머지는내일해야겠다<br><input type='text' value='http://peng-soo.github.io/do_tomorrow.jpg'></span></div>
+<div onclick='onClick(this)'><img src='do_well.jpg'><span>제대로합시다<br><input type='text' value='http://peng-soo.github.io/do_well.jpg'></span></div>
+<div onclick='onClick(this)'><img src='dream.jpg'><span>내꿈은내껏<br><input type='text' value='http://peng-soo.github.io/dream.jpg'></span></div>
+<div onclick='onClick(this)'><img src='dugudugu.gif'><span>두구두구두구<br><input type='text' value='http://peng-soo.github.io/dugudugu.gif'></span></div>
+<div onclick='onClick(this)'><img src='eat.jpg'><span>그냥먹자<br><input type='text' value='http://peng-soo.github.io/eat.jpg'></span></div>
+<div onclick='onClick(this)'><img src='eeriness.jpg'><span>뭐지이이상한기분나쁨은<br><input type='text' value='http://peng-soo.github.io/eeriness.jpg'></span></div>
+<div onclick='onClick(this)'><img src='end.jpg'><span>끝<br><input type='text' value='http://peng-soo.github.io/end.jpg'></span></div>
+<div onclick='onClick(this)'><img src='english.jpg'><span>오늘따라영어가되네<br><input type='text' value='http://peng-soo.github.io/english.jpg'></span></div>
+<div onclick='onClick(this)'><img src='excited.gif'><span>흥폭발<br><input type='text' value='http://peng-soo.github.io/excited.gif'></span></div>
+<div onclick='onClick(this)'><img src='exciting.gif'><span>흥폭발<br><input type='text' value='http://peng-soo.github.io/exciting.gif'></span></div>
+<div onclick='onClick(this)'><img src='exhausted.jpg'><span>당떨어져<br><input type='text' value='http://peng-soo.github.io/exhausted.jpg'></span></div>
+<div onclick='onClick(this)'><img src='exhausted2.jpg'><span>보통일이아닙니다이게<br><input type='text' value='http://peng-soo.github.io/exhausted2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='exhaustion.gif'><span>기진맥진나머지는내일해야겠다<br><input type='text' value='http://peng-soo.github.io/exhaustion.gif'></span></div>
+<div onclick='onClick(this)'><img src='failed.jpg'><span>망했어요<br><input type='text' value='http://peng-soo.github.io/failed.jpg'></span></div>
+<div onclick='onClick(this)'><img src='feel_good.jpg'><span>갑자기기분좋아짐<br><input type='text' value='http://peng-soo.github.io/feel_good.jpg'></span></div>
+<div onclick='onClick(this)'><img src='fight.jpg'><span>파이팅<br><input type='text' value='http://peng-soo.github.io/fight.jpg'></span></div>
+<div onclick='onClick(this)'><img src='finally.jpg'><span>드디어<br><input type='text' value='http://peng-soo.github.io/finally.jpg'></span></div>
+<div onclick='onClick(this)'><img src='finally2.jpg'><span>올것이왔따<br><input type='text' value='http://peng-soo.github.io/finally2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='forgive.jpg'><span>한번봐주겠습니다<br><input type='text' value='http://peng-soo.github.io/forgive.jpg'></span></div>
+<div onclick='onClick(this)'><img src='freedom.jpg'><span>프리덤<br><input type='text' value='http://peng-soo.github.io/freedom.jpg'></span></div>
+<div onclick='onClick(this)'><img src='frustrated.jpg'><span>절망<br><input type='text' value='http://peng-soo.github.io/frustrated.jpg'></span></div>
+<div onclick='onClick(this)'><img src='fun.jpg'><span>재밌다재밌어<br><input type='text' value='http://peng-soo.github.io/fun.jpg'></span></div>
+<div onclick='onClick(this)'><img src='funny.jpg'><span>재밌다재밌어<br><input type='text' value='http://peng-soo.github.io/funny.jpg'></span></div>
+<div onclick='onClick(this)'><img src='go2.jpg'><span>렛츠고<br><input type='text' value='http://peng-soo.github.io/go2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='god.jpg'><span>세상에나<br><input type='text' value='http://peng-soo.github.io/god.jpg'></span></div>
+<div onclick='onClick(this)'><img src='good_idea.jpg'><span>좋은생각이있습니다<br><input type='text' value='http://peng-soo.github.io/good_idea.jpg'></span></div>
+<div onclick='onClick(this)'><img src='good_job.jpg'><span>올지잘한다내새끼<br><input type='text' value='http://peng-soo.github.io/good_job.jpg'></span></div>
+<div onclick='onClick(this)'><img src='go_court.jpg'><span>또법정가는건가<br><input type='text' value='http://peng-soo.github.io/go_court.jpg'></span></div>
+<div onclick='onClick(this)'><img src='go_home.jpg'><span>저가도될까요퇴근해야합니다<br><input type='text' value='http://peng-soo.github.io/go_home.jpg'></span></div>
+<div onclick='onClick(this)'><img src='go_work.jpg'><span>그럼바로작업시작해주세요<br><input type='text' value='http://peng-soo.github.io/go_work.jpg'></span></div>
+<div onclick='onClick(this)'><img src='grateful.jpg'><span>기쁨<br><input type='text' value='http://peng-soo.github.io/grateful.jpg'></span></div>
+<div onclick='onClick(this)'><img src='ha.jpg'><span>하<br><input type='text' value='http://peng-soo.github.io/ha.jpg'></span></div>
+<div onclick='onClick(this)'><img src='happiness.jpg'><span>이것은행복해서흘리는눈물<br><input type='text' value='http://peng-soo.github.io/happiness.jpg'></span></div>
+<div onclick='onClick(this)'><img src='hard_to_swallow.jpg'><span>납득불가<br><input type='text' value='http://peng-soo.github.io/hard_to_swallow.jpg'></span></div>
+<div onclick='onClick(this)'><img src='healing.jpg'><span>힐링타임<br><input type='text' value='http://peng-soo.github.io/healing.jpg'></span></div>
+<div onclick='onClick(this)'><img src='hello.jpg'><span>펭하<br><input type='text' value='http://peng-soo.github.io/hello.jpg'></span></div>
+<div onclick='onClick(this)'><img src='Hit_the_bone.jpg'><span>뼈맞았어<br><input type='text' value='http://peng-soo.github.io/Hit_the_bone.jpg'></span></div>
+<div onclick='onClick(this)'><img src='hm.jpg'><span>흠<br><input type='text' value='http://peng-soo.github.io/hm.jpg'></span></div>
+<div onclick='onClick(this)'><img src='hurry_up.jpg'><span>아빨리<br><input type='text' value='http://peng-soo.github.io/hurry_up.jpg'></span></div>
+<div onclick='onClick(this)'><img src='ignored.jpg'><span>또무시당했어<br><input type='text' value='http://peng-soo.github.io/ignored.jpg'></span></div>
+<div onclick='onClick(this)'><img src='Illogical.jpg'><span>저세상논리<br><input type='text' value='http://peng-soo.github.io/Illogical.jpg'></span></div>
+<div onclick='onClick(this)'><img src='im_listening.jpg'><span>귀담아듣고있어요<br><input type='text' value='http://peng-soo.github.io/im_listening.jpg'></span></div>
+<div onclick='onClick(this)'><img src='im_smart.jpg'><span>괜찮습니다저나름똑똑합니다<br><input type='text' value='http://peng-soo.github.io/im_smart.jpg'></span></div>
+<div onclick='onClick(this)'><img src='im_watching_you.jpg'><span>지켜보고있다<br><input type='text' value='http://peng-soo.github.io/im_watching_you.jpg'></span></div>
+<div onclick='onClick(this)'><img src='incredible.jpg'><span>말도안됨<br><input type='text' value='http://peng-soo.github.io/incredible.jpg'></span></div>
+<div onclick='onClick(this)'><img src='invalid.jpg'><span>이거는무효입니다<br><input type='text' value='http://peng-soo.github.io/invalid.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_am_dying..jpg'><span>이러다제가죽으면어떡합니까<br><input type='text' value='http://peng-soo.github.io/i_am_dying..jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_am_ok.jpg'><span>괜찮아요<br><input type='text' value='http://peng-soo.github.io/i_am_ok.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_am_ok2.jpg'><span>괜찮아여<br><input type='text' value='http://peng-soo.github.io/i_am_ok2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_am_ok3.jpg'><span>저는괜찮습니다<br><input type='text' value='http://peng-soo.github.io/i_am_ok3.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_am_serious.jpg'><span>나는지금진지하다<br><input type='text' value='http://peng-soo.github.io/i_am_serious.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_cannot.jpg'><span>저안하면안될까요<br><input type='text' value='http://peng-soo.github.io/i_cannot.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_cannot_2.jpg'><span>응내가못해<br><input type='text' value='http://peng-soo.github.io/i_cannot_2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_dont_know.jpg'><span>듣고는있지만뭔지모르겠따<br><input type='text' value='http://peng-soo.github.io/i_dont_know.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_dont_know2.jpg'><span>저는잘모르겠어요<br><input type='text' value='http://peng-soo.github.io/i_dont_know2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_was_wrong.jpg'><span>아내생각이짧았네<br><input type='text' value='http://peng-soo.github.io/i_was_wrong.jpg'></span></div>
+<div onclick='onClick(this)'><img src='i_win.jpg'><span>제가이기죠이건<br><input type='text' value='http://peng-soo.github.io/i_win.jpg'></span></div>
+<div onclick='onClick(this)'><img src='just_do.jpg'><span>그냥하자<br><input type='text' value='http://peng-soo.github.io/just_do.jpg'></span></div>
+<div onclick='onClick(this)'><img src='just_do2.jpg'><span>이유는없어그냥해<br><input type='text' value='http://peng-soo.github.io/just_do2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='keep_quiet.jpg'><span>저조용히하고있을게요<br><input type='text' value='http://peng-soo.github.io/keep_quiet.jpg'></span></div>
+<div onclick='onClick(this)'><img src='kidding_me.jpg'><span>지금저놀리십니까<br><input type='text' value='http://peng-soo.github.io/kidding_me.jpg'></span></div>
+<div onclick='onClick(this)'><img src='laugh.jpg'><span>웃었음<br><input type='text' value='http://peng-soo.github.io/laugh.jpg'></span></div>
+<div onclick='onClick(this)'><img src='leave_company.jpg'><span>퇴사각<br><input type='text' value='http://peng-soo.github.io/leave_company.jpg'></span></div>
+<div onclick='onClick(this)'><img src='lol.jpg'><span>풉<br><input type='text' value='http://peng-soo.github.io/lol.jpg'></span></div>
+<div onclick='onClick(this)'><img src='lol2.jpg'><span>ㅋㅋㅋㅋㅋㅋㅋㅋ<br><input type='text' value='http://peng-soo.github.io/lol2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='lol3.jpg'><span>으핰핰핰<br><input type='text' value='http://peng-soo.github.io/lol3.jpg'></span></div>
+<div onclick='onClick(this)'><img src='long.jpg'><span>오래오래해먹자우리<br><input type='text' value='http://peng-soo.github.io/long.jpg'></span></div>
+<div onclick='onClick(this)'><img src='look_on.jpg'><span>불구경<br><input type='text' value='http://peng-soo.github.io/look_on.jpg'></span></div>
+<div onclick='onClick(this)'><img src='lose_words.jpg'><span>할말잃음<br><input type='text' value='http://peng-soo.github.io/lose_words.jpg'></span></div>
+<div onclick='onClick(this)'><img src='loveyou.jpg'><span>사랑합니다<br><input type='text' value='http://peng-soo.github.io/loveyou.jpg'></span></div>
+<div onclick='onClick(this)'><img src='medicine.jpg'><span>아파서약먹습니까건강하려고약먹죠<br><input type='text' value='http://peng-soo.github.io/medicine.jpg'></span></div>
+<div onclick='onClick(this)'><img src='mental_logout.gif'><span>멘탈이로그아웃되셨습니다<br><input type='text' value='http://peng-soo.github.io/mental_logout.gif'></span></div>
+<div onclick='onClick(this)'><img src='mental_loss.jpg'><span>집나간영혼찾는중<br><input type='text' value='http://peng-soo.github.io/mental_loss.jpg'></span></div>
+<div onclick='onClick(this)'><img src='modesty.jpg'><span>겸손부끄럽습니다<br><input type='text' value='http://peng-soo.github.io/modesty.jpg'></span></div>
+<div onclick='onClick(this)'><img src='nervous.jpg'><span>긴장<br><input type='text' value='http://peng-soo.github.io/nervous.jpg'></span></div>
+<div onclick='onClick(this)'><img src='next_work.jpg'><span>다음업무로<br><input type='text' value='http://peng-soo.github.io/next_work.jpg'></span></div>
+<div onclick='onClick(this)'><img src='nice.jpg'><span>나이스<br><input type='text' value='http://peng-soo.github.io/nice.jpg'></span></div>
+<div onclick='onClick(this)'><img src='nitpick.jpg'><span>왜이렇게트집을잡으세요<br><input type='text' value='http://peng-soo.github.io/nitpick.jpg'></span></div>
+<div onclick='onClick(this)'><img src='no.jpg'><span>이게아닌데<br><input type='text' value='http://peng-soo.github.io/no.jpg'></span></div>
+<div onclick='onClick(this)'><img src='not_bad.jpg'><span>저건좀괜찮다<br><input type='text' value='http://peng-soo.github.io/not_bad.jpg'></span></div>
+<div onclick='onClick(this)'><img src='not_to_hear.jpg'><span>못들은척<br><input type='text' value='http://peng-soo.github.io/not_to_hear.jpg'></span></div>
+<div onclick='onClick(this)'><img src='now.jpg'><span>지금해주시면안되나요<br><input type='text' value='http://peng-soo.github.io/now.jpg'></span></div>
+<div onclick='onClick(this)'><img src='no_chance.jpg'><span>어림도없지<br><input type='text' value='http://peng-soo.github.io/no_chance.jpg'></span></div>
+<div onclick='onClick(this)'><img src='no_reject.jpg'><span>거절은거절해<br><input type='text' value='http://peng-soo.github.io/no_reject.jpg'></span></div>
+<div onclick='onClick(this)'><img src='oh_my_god.jpg'><span>ohmygod<br><input type='text' value='http://peng-soo.github.io/oh_my_god.jpg'></span></div>
+<div onclick='onClick(this)'><img src='ok.jpg'><span>오케이.ok<br><input type='text' value='http://peng-soo.github.io/ok.jpg'></span></div>
+<div onclick='onClick(this)'><img src='ominous.jpg'><span>불길한꿈을꾸었습니다<br><input type='text' value='http://peng-soo.github.io/ominous.jpg'></span></div>
+<div onclick='onClick(this)'><img src='peng-ha.gif'><span>펭하<br><input type='text' value='http://peng-soo.github.io/peng-ha.gif'></span></div>
+<div onclick='onClick(this)'><img src='peng-ha2.jpg'><span>펭하<br><input type='text' value='http://peng-soo.github.io/peng-ha2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='peng-night.gif'><span>펭나잇<br><input type='text' value='http://peng-soo.github.io/peng-night.gif'></span></div>
+<div onclick='onClick(this)'><img src='peng-night.jpg'><span>펭나잇<br><input type='text' value='http://peng-soo.github.io/peng-night.jpg'></span></div>
+<div onclick='onClick(this)'><img src='perfect.jpg'><span>역시역시완벽합니다<br><input type='text' value='http://peng-soo.github.io/perfect.jpg'></span></div>
+<div onclick='onClick(this)'><img src='pretend_to_understand.jpg'><span>일단이해한척<br><input type='text' value='http://peng-soo.github.io/pretend_to_understand.jpg'></span></div>
+<div onclick='onClick(this)'><img src='problem.jpg'><span>이게문제입니다이게<br><input type='text' value='http://peng-soo.github.io/problem.jpg'></span></div>
+<div onclick='onClick(this)'><img src='proud.gif'><span>뿌듯<br><input type='text' value='http://peng-soo.github.io/proud.gif'></span></div>
+<div onclick='onClick(this)'><img src='pupil_earthquake.jpg'><span>동공지진<br><input type='text' value='http://peng-soo.github.io/pupil_earthquake.jpg'></span></div>
+<div onclick='onClick(this)'><img src='quit.jpg'><span>급마무리<br><input type='text' value='http://peng-soo.github.io/quit.jpg'></span></div>
+<div onclick='onClick(this)'><img src='ready.jpg'><span>비장<br><input type='text' value='http://peng-soo.github.io/ready.jpg'></span></div>
+<div onclick='onClick(this)'><img src='really.jpg'><span>귀를의심<br><input type='text' value='http://peng-soo.github.io/really.jpg'></span></div>
+<div onclick='onClick(this)'><img src='run_away.gif'><span>도망가시죠<br><input type='text' value='http://peng-soo.github.io/run_away.gif'></span></div>
+<div onclick='onClick(this)'><img src='satisfaction.jpg'><span>완전만족<br><input type='text' value='http://peng-soo.github.io/satisfaction.jpg'></span></div>
+<div onclick='onClick(this)'><img src='satisfied.jpg'><span>완전만족<br><input type='text' value='http://peng-soo.github.io/satisfied.jpg'></span></div>
+<div onclick='onClick(this)'><img src='satisfied2.jpg'><span>흡족<br><input type='text' value='http://peng-soo.github.io/satisfied2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='satisfied3.jpg'><span>만족<br><input type='text' value='http://peng-soo.github.io/satisfied3.jpg'></span></div>
+<div onclick='onClick(this)'><img src='scary.gif'><span>무섭<br><input type='text' value='http://peng-soo.github.io/scary.gif'></span></div>
+<div onclick='onClick(this)'><img src='scream.jpg'><span>소리질러<br><input type='text' value='http://peng-soo.github.io/scream.jpg'></span></div>
+<div onclick='onClick(this)'><img src='secret.jpg'><span>오늘까지만쉿<br><input type='text' value='http://peng-soo.github.io/secret.jpg'></span></div>
+<div onclick='onClick(this)'><img src='shocking.jpg'><span>충격<br><input type='text' value='http://peng-soo.github.io/shocking.jpg'></span></div>
+<div onclick='onClick(this)'><img src='sigh.jpg'><span>한숨쉬십니까<br><input type='text' value='http://peng-soo.github.io/sigh.jpg'></span></div>
+<div onclick='onClick(this)'><img src='sorry.jpg'><span>미안해<br><input type='text' value='http://peng-soo.github.io/sorry.jpg'></span></div>
+<div onclick='onClick(this)'><img src='sorry2.jpg'><span>죄송하게됐습니다<br><input type='text' value='http://peng-soo.github.io/sorry2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='sorry3.jpg'><span>죄송합니다<br><input type='text' value='http://peng-soo.github.io/sorry3.jpg'></span></div>
+<div onclick='onClick(this)'><img src='so_moved.jpg'><span>완전감격<br><input type='text' value='http://peng-soo.github.io/so_moved.jpg'></span></div>
+<div onclick='onClick(this)'><img src='start.jpg'><span>시시시작<br><input type='text' value='http://peng-soo.github.io/start.jpg'></span></div>
+<div onclick='onClick(this)'><img src='stop.gif'><span>멈춰<br><input type='text' value='http://peng-soo.github.io/stop.gif'></span></div>
+<div onclick='onClick(this)'><img src='Succeed.jpg'><span>성공해서오겠습니다<br><input type='text' value='http://peng-soo.github.io/Succeed.jpg'></span></div>
+<div onclick='onClick(this)'><img src='surprised.jpg'><span>어우깜짝이야<br><input type='text' value='http://peng-soo.github.io/surprised.jpg'></span></div>
+<div onclick='onClick(this)'><img src='taste_is_different.jpg'><span>괜찮습니다호불호가갈릴수있어요<br><input type='text' value='http://peng-soo.github.io/taste_is_different.jpg'></span></div>
+<div onclick='onClick(this)'><img src='tast_good.jpg'><span>참았다먹으니더꿀맛<br><input type='text' value='http://peng-soo.github.io/tast_good.jpg'></span></div>
+<div onclick='onClick(this)'><img src='tast_good2.jpg'><span>맛있네요이거<br><input type='text' value='http://peng-soo.github.io/tast_good2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='thanks.jpg'><span>감사합니다<br><input type='text' value='http://peng-soo.github.io/thanks.jpg'></span></div>
+<div onclick='onClick(this)'><img src='thanks_2.jpg'><span>선배님감사합니다<br><input type='text' value='http://peng-soo.github.io/thanks_2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='thinking.jpg'><span>쓸모있는말생각중<br><input type='text' value='http://peng-soo.github.io/thinking.jpg'></span></div>
+<div onclick='onClick(this)'><img src='thinking2.jpg'><span>변명생각중<br><input type='text' value='http://peng-soo.github.io/thinking2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='thinking3.jpg'><span>두뇌풀가동<br><input type='text' value='http://peng-soo.github.io/thinking3.jpg'></span></div>
+<div onclick='onClick(this)'><img src='thinking4.jpg'><span>두뇌풀가동<br><input type='text' value='http://peng-soo.github.io/thinking4.jpg'></span></div>
+<div onclick='onClick(this)'><img src='touching.jpg'><span>살짝감동<br><input type='text' value='http://peng-soo.github.io/touching.jpg'></span></div>
+<div onclick='onClick(this)'><img src='traitor.jpg'><span>완전배신자네요<br><input type='text' value='http://peng-soo.github.io/traitor.jpg'></span></div>
+<div onclick='onClick(this)'><img src='trash.jpg'><span>바로버려야돼요<br><input type='text' value='http://peng-soo.github.io/trash.jpg'></span></div>
+<div onclick='onClick(this)'><img src='tremble.jpg'><span>덜덜덜덜덜무섭<br><input type='text' value='http://peng-soo.github.io/tremble.jpg'></span></div>
+<div onclick='onClick(this)'><img src='understand.jpg'><span>아시겠습니까<br><input type='text' value='http://peng-soo.github.io/understand.jpg'></span></div>
+<div onclick='onClick(this)'><img src='unrest.jpg'><span>심리적불안감이생깁니다<br><input type='text' value='http://peng-soo.github.io/unrest.jpg'></span></div>
+<div onclick='onClick(this)'><img src='upset.jpg'><span>가만안둬<br><input type='text' value='http://peng-soo.github.io/upset.jpg'></span></div>
+<div onclick='onClick(this)'><img src='upset2.jpg'><span>아오오오오<br><input type='text' value='http://peng-soo.github.io/upset2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='upset3.jpg'><span>때려치워<br><input type='text' value='http://peng-soo.github.io/upset3.jpg'></span></div>
+<div onclick='onClick(this)'><img src='victory.jpg'><span>나만이기게해주세요나만<br><input type='text' value='http://peng-soo.github.io/victory.jpg'></span></div>
+<div onclick='onClick(this)'><img src='wait.jpg'><span>또있어기다려봐<br><input type='text' value='http://peng-soo.github.io/wait.jpg'></span></div>
+<div onclick='onClick(this)'><img src='watch_me.jpg'><span>기대해라인간들아<br><input type='text' value='http://peng-soo.github.io/watch_me.jpg'></span></div>
+<div onclick='onClick(this)'><img src='what.jpg'><span>뭐라고!?<br><input type='text' value='http://peng-soo.github.io/what.jpg'></span></div>
+<div onclick='onClick(this)'><img src='what2.jpg'><span>이게무슨소리야?<br><input type='text' value='http://peng-soo.github.io/what2.jpg'></span></div>
+<div onclick='onClick(this)'><img src='what3.jpg'><span>예에?<br><input type='text' value='http://peng-soo.github.io/what3.jpg'></span></div>
+<div onclick='onClick(this)'><img src='what4.jpg'><span>엥?<br><input type='text' value='http://peng-soo.github.io/what4.jpg'></span></div>
+<div onclick='onClick(this)'><img src='what_is_that.jpg'><span>저거뭐야<br><input type='text' value='http://peng-soo.github.io/what_is_that.jpg'></span></div>
+<div onclick='onClick(this)'><img src='what_the.jpg'><span>이게무슨소리?<br><input type='text' value='http://peng-soo.github.io/what_the.jpg'></span></div>
+<div onclick='onClick(this)'><img src='when_is_it_done.jpg'><span>언제끝나<br><input type='text' value='http://peng-soo.github.io/when_is_it_done.jpg'></span></div>
+<div onclick='onClick(this)'><img src='where_go.jpg'><span>어디가<br><input type='text' value='http://peng-soo.github.io/where_go.jpg'></span></div>
+<div onclick='onClick(this)'><img src='why.jpg'><span>왜여<br><input type='text' value='http://peng-soo.github.io/why.jpg'></span></div>
+<div onclick='onClick(this)'><img src='why_say_it_now.jpg'><span>진작말하지<br><input type='text' value='http://peng-soo.github.io/why_say_it_now.jpg'></span></div>
+<div onclick='onClick(this)'><img src='why_shoud.jpg'><span>왜해야합니까이걸<br><input type='text' value='http://peng-soo.github.io/why_shoud.jpg'></span></div>
+<div onclick='onClick(this)'><img src='wink.jpg'><span>윙크<br><input type='text' value='http://peng-soo.github.io/wink.jpg'></span></div>
+<div onclick='onClick(this)'><img src='wow.jpg'><span>WOW<br><input type='text' value='http://peng-soo.github.io/wow.jpg'></span></div>
+<div onclick='onClick(this)'><img src='you_can.jpg'><span>거봐할수있잖아<br><input type='text' value='http://peng-soo.github.io/you_can.jpg'></span></div>
+<div onclick='onClick(this)'><img src='zzzz.jpg'><span>zzzz<br><input type='text' value='http://peng-soo.github.io/zzzz.jpg'></span></div>
+
+
+
+</body>
+
+<script charset="UTF-8">
+    var images = document.getElementsByTagName("div");
+    var texts = document.getElementsByTagName("span");
+    function onClick (target) {
+        var input = target.getElementsByTagName("input")[0];
+        input.select();
+        input.setSelectionRange(0, 99999);
+
+        document.execCommand("copy");
+    }
+    function searchChange (e) {
+        for (var i = 0; i<images.length; i++) {
+            images[i].className = '';
+        }
+
+        var keyword = e.value;
+        for (var i = 0; i<images.length; i++) {
+            if(!texts[i].textContent.includes(keyword))
+            images[i].className = 'hide';
+        }
+    }
+</script>
+</html>
